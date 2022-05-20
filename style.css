@@ -104,19 +104,44 @@ img:hover {
 
 
 .ex-10-icon {
-    animation: giro 1s linear infinite;
+    animation: giro-reverse 1s linear infinite;
     font-size: 60px;
 }
 
-@keyframes giro {
+@keyframes giro-reverse {
     0% {
-        transform: rotate(360deg);
+        transform: rotate(1turn);
     }
 }
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon {
+    animation: giro 3s linear;
+    font-size: 60px;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(315deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+
+
+
+}
+
 
 .ex-12-button,
 .ex-13-button {
