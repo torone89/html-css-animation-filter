@@ -97,6 +97,16 @@ img:hover {
     font-size: 60px;
 }
 
+.ex-10-icon {
+    animation: giro 1s linear infinite;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
