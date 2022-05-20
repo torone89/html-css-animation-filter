@@ -99,7 +99,7 @@ img:hover {
 .ex-9-img:hover {
     filter: opacity(60%) grayscale(100%);
     transform: scale(1.3);
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
 
@@ -110,8 +110,24 @@ img:hover {
 
 @keyframes giro-reverse {
     0% {
-        transform: rotate(1turn);
+        transform: rotate(0);
     }
+
+
+
+    100% {
+        transform: rotate(-360deg);
+
+    }
+
+    /* N.B Più Semplicemente!  Un giro di 360 % in senso antiorario 
+    
+    0% {
+        transform: rotate(1turn);  /// deg (360 ) Gira in senso orario
+    }
+} */
+
+
 }
 
 .ex-11-icon {
@@ -167,6 +183,30 @@ img:hover {
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move 1s linear;
+}
+
+
+@keyframes move {
+    0% {
+        left: 10%;
+        /*   partenza margine */
+    }
+
+    50% {
+        left: calc(100% - 60px);
+        /* Parto dal 100% di left e tolgo la larghezza del contenitore */
+    }
+
+    100% {
+        left: 10%;
+
+        /*   Ritorno al margine inziale*/
+    }
+}
+
 
 .ex-12-bottom-white,
 .ex-13-bottom-white {
