@@ -74,6 +74,11 @@ img:hover {
     filter: grayscale(100%);
 }
 
+.ex-7-img:hover {
+    width: 50%;
+    transition: 4s;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
