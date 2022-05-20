@@ -75,22 +75,31 @@ img:hover {
 }
 
 .ex-7-img:hover {
-    width: 50%;
+
     transition: 4s;
+}
+
+
+.ex-8-img {
+    transition: 4s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(60%) saturate(40%);
+    border-radius: 20px;
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 4s;
 
-    transition: all 5.5s ease;
 }
 
 .ex-9-img:hover {
     filter: opacity(60%) grayscale(100%);
-    transform: rotate(-360deg);
-    width: 0%;
-    border-radius: 20%;
+    transform: calc(1.3);
+    border-radius: 10%;
 }
 
 .ex-10-icon {
