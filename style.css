@@ -90,6 +90,7 @@ img:hover {
     filter: opacity(60%) grayscale(100%);
     transform: rotate(-360deg);
     width: 0%;
+    border-radius: 20%;
 }
 
 .ex-10-icon {
