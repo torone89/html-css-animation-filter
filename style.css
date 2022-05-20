@@ -184,10 +184,21 @@ img:hover {
     height: 20px;
 }
 
+
+
+.ex-12-bottom-white,
+.ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
 .ex-12-button:hover .ex-12-top-white {
     animation: move 1s linear;
 }
-
 
 @keyframes move {
     0% {
@@ -208,12 +219,22 @@ img:hover {
 }
 
 
-.ex-12-bottom-white,
-.ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-bot 2s linear;
+}
+
+@keyframes move-bot {
+
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 20%;
+    }
 }
