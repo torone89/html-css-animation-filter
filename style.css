@@ -82,6 +82,14 @@ img:hover {
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+
+    transition: all 5.5s ease;
+}
+
+.ex-9-img:hover {
+    filter: opacity(60%) grayscale(100%);
+    transform: rotate(-360deg);
+    width: 0%;
 }
 
 .ex-10-icon {
